@@ -29,7 +29,7 @@
             height: 150px;
             border-radius: 50%;
             margin: 20px auto;
-            background: url('/mnt/data/flower.jpg') no-repeat center/cover;
+            background: url('assets/downhillFinance.jpg') no-repeat center/cover;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
         }
 
@@ -68,7 +68,10 @@
         }
 
         .links a {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             width: 100%;
             padding: 10px 20px;
             background: #1e88e5;
@@ -77,6 +80,11 @@
             border-radius: 8px;
             font-weight: 600;
             transition: background 0.3s;
+        }
+
+        .links a img {
+            width: 20px;
+            height: 20px;
         }
 
         .links a:hover {
@@ -98,9 +106,15 @@
     <p>Your Personal Description or Tagline Goes Here</p>
 
     <div class="links">
-        <a href="#" target="sleeper">Sleeper</a>
-        <a href="#" target="underdog">UnderDog</a>
-        <a href="#" target="prizepicks">PrizePicks</a>
+        <a href="https://www.sleeper.com" target="_blank">
+            <img src="assets/sleeper.jpg" alt="Sleeper Logo"> Sleeper
+        </a>
+        <a href="https://www.underdogfantasy.com" target="_blank">
+            <img src="assets/underdog.webp" alt="Underdog Logo"> UnderDog
+        </a>
+        <a href="https://www.prizepicks.com" target="_blank">
+            <img src="assets/prizepicks.png" alt="PrizePicks Logo"> PrizePicks
+        </a>
     </div>
 </body>
 </html>
